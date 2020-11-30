@@ -1,0 +1,105 @@
+canvas {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 640px;
+    height: 640px;
+    margin: -320px 0 0 -320px;
+}
+
+.container-fluid{
+    width: 99vw;
+    height: 70vh;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 15%;
+}
+
+.hidden{
+    display: none;
+}
+
+.input {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    font-size: 10.5em;
+    background: #ffffff;
+    border-color: #000000;
+    padding: 3px;
+    display: block;
+    border-radius: 9999em;
+}
+.input *:not(span) {
+    font-size: 0.1em;
+    width: calc(100% - 12px);
+    height: 50px;
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;/*
+    border: none;*/
+    outline: none;
+    padding: 0 0.325em;
+    z-index: 1;
+}
+.input *:not(span):focus + span {
+    opacity: 1;
+    transform: scale(1);
+}
+.input span {
+    transform: scale(0.993, 0.94);
+    transition: transform 0.5s, opacity 0.25s;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    margin: 4px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #bfbfbf, -3px 3px 30px #737373;
+}
+
+#clickableZone{
+    margin: 0 auto;
+    vertical-align: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: #000000;
+}
+
+#backButton{
+    display: none;
+}
+
+#backButton2{
+    margin-top: 10px;
+    position: relative;
+    top: 80%;
+}
+
+#playTetrisButton{
+    margin-top: 10px;
+    position: relative;
+    top: 80%;
+}
+
+.alarm{
+    color: red;
+    position: relative;
+    top: 35%;
+}
+
+#displayAlarmArea{
+    max-width: 20vw;
+    height: 20vh;
+    background-color: #000000;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
